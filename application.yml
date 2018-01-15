@@ -50,18 +50,9 @@ hystrix:
       maxQueueSize: -1
       # Queue size rejection threshold (Default: 5)
       queueSizeRejectionThreshold: 5
-  command:
-    default:
-      circuitBreaker:
-        sleepWindowInMilliseconds: 30000
-        requestVolumeThreshold: 3
-      execution:
-        isolation:
-#          strategy: SEMAPHORE, no thread pool but timeout handling stops to work
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 4000
-
+  stream:
+    queue:
+      send-id: false
 
 
 ribbon:
