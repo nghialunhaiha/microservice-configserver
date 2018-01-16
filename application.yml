@@ -31,7 +31,7 @@ logging:
     org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer: INFO
 
     # Set DEBUG level on Hystrix to get an error message when a fallback method is used.
-    com.netflix.hystrix: DEBUG
+    #com.netflix.hystrix: DEBUG
     com.netflix.hystrix.strategy.properties.HystrixPropertiesChainedArchaiusProperty: WARN
 
     # To get rid of fake WARN messages: "Deprecated trace headers detected. Please upgrade Sleuth to 1.1 or start sending headers present in the TraceMessageHeaders class",
