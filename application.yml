@@ -95,6 +95,8 @@ eureka:
     serviceUrl:
       defaultZone: http://nghia.ms:8761/eureka/
 
+custom.gateway:
+  url: http://nghia.ms:8765
 ---
 # For deployment in Docker containers
 spring:
