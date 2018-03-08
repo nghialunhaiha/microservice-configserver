@@ -71,7 +71,7 @@ zuul:
 #      stripPrefix: false
     core-composite-service:
       path: /compose/**
-    user_service:
+    bus-user:
       path: /user_path/**
 logging:
   level:
